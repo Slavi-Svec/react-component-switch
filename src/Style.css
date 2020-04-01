@@ -1,3 +1,13 @@
-* {
-    background-color:lightblue;
+/* * { */
+    /* background-color:lightblue; */
+/* } */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
+h2 {
+    color: blueviolet;
 }

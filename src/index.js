@@ -1,44 +1,16 @@
-import React from 'react';
+import React from 'react'
 import ReactDOM from 'react-dom';
-import Switch from 'react-switch';
-// import Style from'./Components/Style.css';
-import './Style.css'
+import CheckBox from './Components/CheckBox/CheckBox'
+import CheckBoxV2 from './Components/CheckBoxV2/CheckBoxV2'
 
 
-class App extends React.Component {
-    constructor () {
-        super ()
-        this.state = {
-            checked: false
-
-        }
-        this.handleChange = this.handleChange.bind(this)
-    }
-    handleChange(checked) {
-        this.setState({checked})
-    }
-    render () {
-        return (
-            <div class="wrpper">
-                <h2>IOS Switch</h2>
-                    <Switch
-                        className="react-switch"
-                        onChange={this.handleChange}
-                        checked={this.state.checked}  
-                    />
-                    <p>the switch is <b>{this.state.checked ? 'on' : 'off' }</b></p>
-            </div>
-        )
-    }
+const App = () => {
+    return (
+        <>
+            <CheckBox />
+            <CheckBoxV2 />
+        </>
+    )
 }
 
 ReactDOM.render(<App/>, document.getElementById('root'))
-
-
-
-
-
-
-
-
-
