@@ -8,7 +8,7 @@ const App = () => {
     return (
         <>
             <CheckBox />
-            <CheckBoxV2 />
+            {/* <CheckBoxV2 />  */}
         </>
     )
 }
