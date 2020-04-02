@@ -8,7 +8,7 @@ const CheckBox = () => {
     return (
         <>
           <div>
-          <h1 style={{backgroundColor: 'pink'}}>hello</h1>
+          <h1 style={{backgroundColor: 'pink'}}>IOS Switch</h1>
           <Switch onChange={() => handelChange(!checked)} checked={checked} />
           <RenderState text="The switch is" checked={checked} />
           </div>
