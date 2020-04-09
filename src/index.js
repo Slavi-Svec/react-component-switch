@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react-dom';
 import CheckBox from './Components/CheckBox/CheckBox'
-import CheckBoxV2 from './Components/CheckBoxV2/CheckBoxV2'
+import ToggleText from './Components/ToggleText/ToggleText'
+import Title from './Components/Title/Title'
+import './styles.css'
 
 
 const App = () => {
+    const [checked, setChecked] = useState(false);
+    const onChange = () => {
+        setChecked(!checked)
+    }
+    const isChecked = checked ?  'on' : 'off'
+
     return (
-        <>
-            <CheckBox />
-            {/* <CheckBoxV2 />  */}
-        </>
+        <div className="app">
+            <CheckBox onChange={onChange} checked={checked} />
+            <ToggleText checked={checked} />
+            <Title title={`The checkbox is ${isChecked}`} />
+        </div>
     )
 }
 
