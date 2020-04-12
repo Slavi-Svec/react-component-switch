@@ -8,7 +8,11 @@ import HeadingV2 from './Components/HeadingV2/HeadingV2'
 import Text from './Components/Text/Text'
 import StartButton from './Components/StartButton/StartButton'
 import Image from './Components/Image /Image'
-
+import PlayButton from './Components/PlayButton/PlayButton'
+import SurveyButton from './Components/SurveyButton/SurveyButton'
+import CodeSnippet from './Components/CodeSnippet/CodeSnippet'
+import BoldHeading from './Components/BoldHeading/BoldHeading'
+// import OrderList from './Components/OrderList/OrderList'
 
 import PlaceholderImage from './assets/placeholder.png'
 import './styles.css'
@@ -31,8 +35,13 @@ const App = () => {
             <Heading heading= { "it is the weekend!" } />
             <HeadingV2 headingV2= { "it is the Weekend of Easter!"} />
             <Text variant="h1">Everyone loves Easter time!</Text>
+            <BoldHeading boldHeading={ "Learn React, and this code over the long weekend"} />
+            <CodeSnippet codeSnippet={ "ReactDOM.render(<h1>Hello, world!</h1>, document.getElementById('root'));"} />
+            {/* <OrderList orderlist={ "buy new pencils" } /> */}
+            <StartButton title={ "start now" } />
             <Image image={PlaceholderImage} alt="thisistheimagealttext"/>
-            <StartButton />
+            <PlayButton title={ "press the button to play the music" }  />
+            <SurveyButton heading={ "Enter the survey" } />
         </div>
     )
 }

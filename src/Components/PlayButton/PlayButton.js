@@ -1,9 +1,9 @@
 import React from 'react'
 
-const StartButton = ({ title }) => {
+const PlayButton = ({ title }) => {
     return (
         <button>{title}</button>
     )
 }
 
-export default StartButton
+export default PlayButton
