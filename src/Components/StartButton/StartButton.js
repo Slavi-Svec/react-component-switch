@@ -2,7 +2,7 @@ import React from 'react'
 
 const StartButton = ({ title }) => {
     return (
-        <button>{title}</button>
+        <button onMouseOver={() => alert("yo yo yo")}>{title}</button>
     )
 }
 

@@ -6,5 +6,4 @@ const Heading = ({ heading }) => {
     )
 }
 
-
 export default Heading

@@ -2,7 +2,7 @@ import React from 'react'
 
 const SurveyButton = ({ heading }) => {
     return (
-        <button>{ heading }</button>
+        <button onClick={() => window.open("www.google.com") }>{ heading }</button>
     )
 
 }
