@@ -1,17 +1,22 @@
 import React from 'react'
 
-const Table = ({ tableData }) => {
-    const tableHeadings = Object.keys(tableData[0])
-    const tableValues = Object.values(tableData[0])
+const Table = ({ data }) => {
+    const tableRows = data.map(data => {
+        const { id, name, age, email } = data
+        return (
+            <tr>
+                <td>{id}</td>
+                <td>{name}</td>
+                <td>{age}</td>
+                <td>{email}</td>
+            </tr>
+        )
+    })
 
     return (
         <table>
-            <tr>
-                {tableHeadings.map(heading => (<th>{heading}</th>))}
-            </tr>
-            <tr>
-                {tableValues.map(value => (<th>{value}</th>))}
-            </tr>
+            {Object.keys(data[0]).map(header => <th>{header}</th>)}
+            {tableRows}
         </table>
     )
 }

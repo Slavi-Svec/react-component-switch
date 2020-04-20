@@ -1,8 +1,10 @@
 import React from 'react'
+import './styles.css'
 
-const PlayButton = ({ title }) => {
+
+const PlayButton  = ({ title }) => {
     return (
-        <button>{title}</button>
+        <button className="playbutton">{title}</button>
     )
 }
 

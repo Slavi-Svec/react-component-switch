@@ -19,6 +19,7 @@ import students from './students'
 import PlaceholderImage from './assets/placeholder.png'
 import './styles.css'
 
+
 const App = () => {
     const [checked, setChecked] = useState(false);
     const onChange = () => {
@@ -35,7 +36,7 @@ const App = () => {
             <Title title="its friday" />
             <Heading heading="it is the weekend!" />
             <HeadingV2 headingV2="it is the Weekend of Easter!" />
-            <Table tableData={students} />
+            <Table data={students} />
             <Text variant="h1">Everyone loves Easter time!</Text>
             <BoldHeading boldHeading="Learn React, and this code over the long weekend" />
             <List Tag="ul" items={['JSX', 'SASS', 'Javascript']} />
